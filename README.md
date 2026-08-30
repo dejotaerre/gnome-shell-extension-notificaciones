@@ -23,6 +23,17 @@ gnome-extensions enable notificaciones@dejotaerre.github.io
 
 En Wayland, los cambios pueden probarse en una sesión anidada mediante `gnome-shell-test-tool` o cerrando y volviendo a iniciar sesión.
 
+## Desarrollo visual
+
+Para empaquetar, instalar y abrir automáticamente un GNOME Shell anidado:
+
+```bash
+make dev
+```
+
+Después de modificar la extensión, cierra únicamente la ventana anidada y
+vuelve a ejecutar `make dev`. No es necesario cerrar la sesión principal.
+
 ## Licencia
 
 MIT.

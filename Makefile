@@ -1,7 +1,7 @@
 UUID := notificaciones@dejotaerre.github.io
 DIST := dist/$(UUID).shell-extension.zip
 
-.PHONY: all pack install enable disable clean
+.PHONY: all pack install enable disable dev clean
 
 all: pack
 
@@ -22,6 +22,9 @@ enable:
 
 disable:
 	gnome-extensions disable $(UUID)
+
+dev:
+	./dev.sh
 
 clean:
 	rm -f $(DIST)
