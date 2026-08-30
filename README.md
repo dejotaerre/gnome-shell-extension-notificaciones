@@ -32,4 +32,4 @@ de la extensión.
 
 ## Licencia
 
-GPL-3.0-or-later.
+MIT.
