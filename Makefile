@@ -11,6 +11,7 @@ pack:
 		--schema=schemas/org.gnome.shell.extensions.notificaciones.gschema.xml \
 		--extra-source=alarmManager.js \
 		--extra-source=indicator.js \
+		--extra-source=notifier.js \
 		--extra-source=LICENSE \
 		--extra-source=icons .
 

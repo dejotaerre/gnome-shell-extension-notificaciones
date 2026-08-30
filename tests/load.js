@@ -7,6 +7,11 @@ export const METRICS = {
         units: 'boolean',
         value: 0,
     },
+    notificationSent: {
+        description: 'Una alarma inmediata atravesó el notificador',
+        units: 'boolean',
+        value: 0,
+    },
 };
 
 export async function run() {
@@ -17,4 +22,11 @@ export async function run() {
         throw new Error('No se encontró el indicador de Notificaciones');
 
     METRICS.extensionLoaded.value = 1;
+    indicator._alarmManager.add('0', 'Prueba automática');
+    await Scripting.sleep(3000);
+
+    if (indicator._alarmManager.getAlarms().length !== 0)
+        throw new Error('La alarma inmediata no fue enviada');
+
+    METRICS.notificationSent.value = 1;
 }
