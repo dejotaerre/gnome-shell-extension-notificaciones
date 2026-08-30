@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.notificaciones" path="/org/gnome/shell/extensions/notificaciones/">
+    <key name="alarms" type="s">
+      <default>'[]'</default>
+      <summary>Alarmas programadas</summary>
+      <description>Lista JSON de alarmas pendientes con identificador, mensaje y fecha.</description>
+    </key>
+  </schema>
+</schemalist>

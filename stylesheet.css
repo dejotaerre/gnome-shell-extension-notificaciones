@@ -1,0 +1,25 @@
+.notificaciones-form {
+    spacing: 10px;
+    min-width: 320px;
+    padding: 8px;
+}
+
+.notificaciones-title {
+    font-weight: bold;
+}
+
+.notificaciones-button {
+    padding: 6px 14px;
+}
+
+.notificaciones-status {
+    font-size: 0.9em;
+}
+
+.notificaciones-error {
+    color: #ff7b63;
+}
+
+.notificaciones-cancel-button {
+    padding: 5px;
+}

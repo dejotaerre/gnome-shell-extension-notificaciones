@@ -1,0 +1,8 @@
+{
+  "uuid": "notificaciones@dejotaerre.github.io",
+  "name": "Notificaciones programadas",
+  "description": "Programa recordatorios desde el panel usando minutos o una hora concreta. Las alarmas se conservan entre reinicios de GNOME Shell.",
+  "shell-version": ["50"],
+  "settings-schema": "org.gnome.shell.extensions.notificaciones",
+  "url": "https://github.com/dejotaerre/gnome-shell-extension-notificaciones"
+}
