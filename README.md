@@ -25,7 +25,10 @@ En Wayland, los cambios pueden probarse en una sesión anidada mediante `gnome-s
 
 ## Publicación en EGO
 
-Antes de publicar, el mantenedor debe leer y comprender todo el código, probarlo en GNOME Shell 50 y retirar personalmente el aviso de código asistido por IA de `extension.js`. Publicar en extensions.gnome.org implica asumir el mantenimiento de la extensión.
+Antes de publicar, el mantenedor debe leer y comprender todo el código, probarlo
+en GNOME Shell 50 y retirar personalmente el aviso de código asistido por IA de
+`extension.js`. Publicar en extensions.gnome.org implica asumir el mantenimiento
+de la extensión.
 
 ## Licencia
 
