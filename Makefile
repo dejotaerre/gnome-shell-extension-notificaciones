@@ -1,5 +1,6 @@
 UUID := notificaciones@dejotaerre.github.io
 DIST := dist/$(UUID).shell-extension.zip
+INSTALL_DIR := $(HOME)/.local/share/gnome-shell/extensions/$(UUID)
 
 .PHONY: all pack install enable disable dev clean
 
@@ -16,7 +17,9 @@ pack:
 		--extra-source=icons .
 
 install: pack
-	gnome-extensions install --force $(DIST)
+	mkdir -p $(INSTALL_DIR)
+	unzip -oq $(DIST) -d $(INSTALL_DIR)
+	test -f $(INSTALL_DIR)/notifier.js
 
 enable:
 	gnome-extensions enable $(UUID)
