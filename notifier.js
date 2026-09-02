@@ -49,6 +49,8 @@ export class Notifier {
             urgency: MessageTray.Urgency.NORMAL,
         });
 
+        notification.playSound();
+        notification.sound = null;
         source.addNotification(notification);
     }
 
