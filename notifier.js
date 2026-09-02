@@ -45,6 +45,7 @@ export class Notifier {
             title: 'Recordatorio',
             body: message,
             iconName: 'alarm-symbolic',
+            sound: new MessageTray.Sound(null, 'alarm-clock-elapsed'),
             urgency: MessageTray.Urgency.NORMAL,
         });
 
